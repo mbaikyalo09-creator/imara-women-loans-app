@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imara Women's Loans</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f6faf7;
+      color: #1c2b20;
+    }
+
+    header {
+      background: #138a36;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #138a36, #45b649);
+      color: white;
+      padding: 70px 7%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 34px;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .hero button {
+      margin-top: 25px;
+      background: white;
+      color: #138a36;
+      border: none;
+      border-radius: 8px;
+      padding: 14px 25px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 45px 7%;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #138a36;
+      margin-bottom: 12px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      text-align: left;
+    }
+
+    .card h3 {
+      color: #138a36;
+      margin-top: 0;
+    }
+
+    .apply-box {
+      max-width: 500px;
+      margin: 25px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      text-align: left;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 13px;
+      margin: 10px 0;
+      border: 1px solid #cfd8d1;
+      border-radius: 7px;
+      font-size: 15px;
+    }
+
+    .apply-box button {
+      width: 100%;
+      background: #138a36;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 7px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    footer {
+      background: #102a18;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Imara Women's Loans</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#loans">Loans</a>
+      <a href="#apply">Apply</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Grow Your Dreams With Imara Women's Loans</h1>
+    <p>Affordable and supportive loans designed to help women grow businesses, support families, and build a stronger future.</p>
+    <button onclick="document.getElementById('apply').scrollIntoView()">Apply for a Loan</button>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Imara</h2>
+    <p>Imara Women's Loans supports women entrepreneurs with accessible financial solutions and guidance for business growth.</p>
+  </section>
+
+  <section class="section" id="loans">
+    <h2>Our Loan Options</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Business Loan</h3>
+        <p>Get capital to stock your shop, expand your biashara, or grow your small business.</p>
+      </div>
+
+      <div class="card">
+        <h3>Emergency Loan</h3>
+        <p>Quick support when unexpected needs arise for you or your family.</p>
+      </div>
+
+      <div class="card">
+        <h3>Group Loan</h3>
+        <p>Loans designed for women groups and chamas working together.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="apply">
+    <h2>Apply for a Loan</h2>
+
+    <div class="apply-box">
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="tel" placeholder="Phone Number (e.g. 0712345678)" required />
+        <input type="number" placeholder="Amount Needed (KES)" required />
+
+        <select required>
+          <option value="">Select Loan Type</option>
+          <option>Business Loan</option>
+          <option>Emergency Loan</option>
+          <option>Group Loan</option>
+        </select>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Imara Women's Loans. All rights reserved.
+  </footer>
+
+</body>
+</html>
